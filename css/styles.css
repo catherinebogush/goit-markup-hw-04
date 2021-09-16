@@ -45,7 +45,9 @@ ul {
 }
 
 /* -------------------------Header----------------------*/
-
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
 .page-logo-nav {
   font-family: Raleway;
   font-style: normal;
@@ -125,16 +127,13 @@ ul {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.portfolio-page-header {
-  border-bottom: 1px solid #ececec;
-}
+
 .filters {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
 }
 .filter-button {
-  height: 38px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 500;
@@ -143,6 +142,7 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding: 6px 22px 6px 22px;
 }
 .projects {
   padding: 20px 24px;
@@ -171,6 +171,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
 }
+.portfolio-link {
+  max-width: 100%;
+}
 .portfolio-item {
   width: 370px;
   margin-right: 30px;
@@ -178,6 +181,7 @@ ul {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  display: block;
 }
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
@@ -308,31 +312,29 @@ ul {
   margin: 0px 32px 30px 32px;
   align-items: center;
 }
-.icon {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-}
-.social-contacts-link {
-  border-radius: 50%;
-}
+
 .social-contacts-link:hover,
 .social-contacts-link:focus {
   fill: #ffffff;
   background-color: #2196f3;
 }
-.social-item {
+
+.social-contacts-link {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.social-contacts-link {
-  fill: #afb1b8;
-  display: flex;
+  border-radius: 50%;
 }
 .social-contacts:not(:last-child) {
   margin-right: 10px;
 }
+.social-item {
+  display: flex;
+}
+
 .work-name {
   padding-top: 30px;
   padding-bottom: 16px;
@@ -348,12 +350,6 @@ ul {
   display: flex;
   align-items: center;
 }
-.team-list-item:hover,
-.team-list-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-}
 
 .team {
   margin-bottom: 50px;
@@ -361,6 +357,7 @@ ul {
 .main-third {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 
 .team-list-item:not(:last-child) {
@@ -369,6 +366,9 @@ ul {
 .team-list-item {
   width: 270px;
   height: 428px;
+  background-color: #fff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .team-item-name {
   font-weight: 500;
@@ -424,7 +424,7 @@ ul {
 }
 /*----------------------------Footer--------------------------*/
 .footer-page {
-  background-color: black;
+  background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -489,35 +489,35 @@ ul {
   align-items: baseline;
 }
 .footer-icon {
-  width: 44px;
-  height: 44px;
-  padding: 12px;
-  fill: #ffffff;
-  background-color: #44454e;
-  border-radius: 50%;
 }
-.footer-icon:hover,
-.footer-icon:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #2196f3;
 }
 .footer-title-additional {
-  font-style: bold;
-  font-style: 14px;
-  line-height: 16px;
-  line-height: 100%;
-  align: Left;
-  vertical-align: Top;
-  letter-spacing: 3%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: #fff;
 }
-
+.footer-social-item {
+}
 .footer-social-list {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 0 auto;
 }
 .footer-social-link {
+  fill: #fff;
+  background-color: #44454e;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
