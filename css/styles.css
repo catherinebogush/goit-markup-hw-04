@@ -391,6 +391,10 @@ ul {
   margin-bottom: 50px;
 }
 
+.constant-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .constant-clients-link {
   width: 170px;
   height: 92px;
@@ -420,7 +424,6 @@ ul {
 }
 .constant-clients-li {
   height: 92px;
-  margin-bottom: 94px;
 }
 /*----------------------------Footer--------------------------*/
 .footer-page {
